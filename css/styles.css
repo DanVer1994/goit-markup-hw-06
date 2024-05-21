@@ -1,0 +1,564 @@
+.hidden {
+    display: none;
+}
+
+.body {
+    font-family: "Roboto", sans-serif;
+    color:#434455;
+    background-color: #ffffff;
+}
+
+ul, 
+ol {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 
+common
+*/
+
+.container {
+    max-width: 320px;
+    padding: 0 16px;
+margin: 0 auto; 
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+        margin: 0 auto; 
+    }
+}
+
+/* ========================================================================================================================================================
+HEADER
+======================================================================================================================================================== */
+.page-header {
+    border-bottom: 1px solid #e7e9fc; 
+}
+
+.header-styles {
+    display: flex;
+    align-items: center;
+}
+
+.menu,
+.address-styles {
+    display: none;
+}
+
+.page-logo {
+    display: block;
+    padding: 16px 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#4D5AE5;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .text-italic {
+        color: #2e2f42;
+    }
+
+    .page-navigation {
+        margin-right: auto;
+    }
+
+    .btn-burger {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        fill: #2f2f37;
+    }
+
+    @media screen and (min-width: 768px) {
+    .btn-burger {
+        display: none;
+    }
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.page-logo {
+    margin-right: 120px;
+    padding: 24px 0;
+}
+
+    .menu {
+        display: flex;
+        gap: 40px;
+    }
+
+    .menu-link {
+        font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+        display: block; 
+        letter-spacing: 0.02em;
+        padding: 24px 0;
+        color: #2e2f42;
+        position: relative; 
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .address-styles {
+        display: block;
+        font-style: normal;
+    } 
+
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .address-styles-items {
+        display: block;
+        font-size: 12px;
+        line-height: 1.7;
+        letter-spacing: 0.04em;
+        color: #434455;
+    }
+
+    .address-styles-items:hover {
+        color: #404bbf;
+    }
+    
+    .address-styles-items:focus {
+        color: #404bbf;
+    }
+
+    .current {
+        position: relative;
+        color: #404bbf;
+    }
+    
+    .current::after {
+        content: "";
+        width: 100%; 
+        position: absolute; 
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        background-color: #404bbf;
+        border-radius: 2px;
+    }
+}
+
+    @media screen and (min-width: 1158px) {
+        .page-logo {
+            margin-right: 76px;
+        }
+        .address-list {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        .address-styles-items {
+            font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+            color: #434455;
+        }
+    }
+
+    /* ========================================================================================================================================================
+    HERO
+    ======================================================================================================================================================== */
+ 
+    .main-text {
+        font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11111;
+letter-spacing: 0.02em;
+text-align: center;
+color: #fff;
+margin-left: 52px;
+margin-right: 52px;
+margin-top: 72px;
+margin-bottom: 72px;
+    }
+
+    .button-styles {
+        border-radius: 4px;
+        padding: 16px 32px;
+        margin-left: 75px;
+        margin-right: 76px;
+        margin-bottom: 72px;
+        font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+        background-color: #4D5AE5; 
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .button-styles:hover {
+            background-color: #404BBF;
+        }
+        
+        .button-styles:focus {
+            background-color: #404BBF;
+        }
+    
+    .hero-back-color {
+        background-color: #2E2F42;
+    }
+    
+    .hero-description {
+        width: 320px;
+        padding: 188px 0;
+        box-sizing: border-box;
+        background: rgba(46, 47, 66, 0.7);
+    }
+    
+    .background-image {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/group-people.jpg);
+        max-width: 320px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .main-title {
+        padding-bottom: 20px;
+    }
+    
+    .hero {
+        margin-bottom: 100px;
+        padding-bottom: 50 px;
+    }
+
+    @media screen and (min-width: 768px) {
+        
+        .hero-description {
+            width: 768px;
+            padding: 188px 0;
+            box-sizing: border-box;
+            background: rgba(46, 47, 66, 0.7);
+        }
+        
+        .background-image {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/group-people.jpg);
+            max-width: 768px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .main-text {
+            font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07143;
+letter-spacing: 0.02em;
+text-align: center;
+color: #fff;
+    margin-left: 136px;
+    margin-right: 136px;
+    margin-top: 112px;
+    margin-bottom: 36px;
+        }
+    
+        .button-styles {
+            border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
+            margin-left: 299px;
+            margin-right: 300px;
+            margin-bottom: 112px;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+            padding: 16px 32px;
+            font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+            background-color: #4D5AE5; 
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            .button-styles:hover {
+                background-color: #404BBF;
+            }
+            
+            .button-styles:focus {
+                background-color: #404BBF;
+            }
+        
+        .hero-back-color {
+            background-color: #2E2F42;
+        }
+    }
+
+    @media screen and (min-width: 1158px) {
+        .hero-description {
+            width: 1440px;
+    padding: 188px 0;
+    box-sizing: border-box;
+    background: rgba(46, 47, 66, 0.7);
+        }
+        
+        .background-image {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/group-people.jpg);
+            max-width: 1440px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .main-text {
+            font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07143;
+letter-spacing: 0.02em;
+text-align: center;
+color: #fff;
+padding-left: 163px;
+padding-right: 164px;
+padding-bottom: 48px;
+        }
+    
+        .button-styles {
+            border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
+margin-right: 636px;
+margin-bottom: 188px;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+            padding: 16px 32px;
+            font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+            background-color: #4D5AE5; 
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            .button-styles:hover {
+                background-color: #404BBF;
+            }
+            
+            .button-styles:focus {
+                background-color: #404BBF;
+            }
+        
+        .hero-back-color {
+            background-color: #2E2F42;
+        }
+    }
+    
+    /* ========================================================================================================================================================
+    BENEFITS
+    ======================================================================================================================================================== */
+    .benefits-section {
+padding: 16px;
+    }
+      .benefits-list {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        width: 288px;
+      }
+    
+      .benefits-item {
+        width: calc((100% - 72px) / 4);
+      }
+    
+      .benefits-styles {
+        margin-bottom: 8px;
+        font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11111;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+      }
+    
+.benefits-paragraph {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+
+    .benefits-item-icon-wrapper {
+        display: none;
+    }
+
+    .visually-hidden {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        .benefits-section {
+            padding: 16px;
+            width: 736px;
+                }
+                  .benefits-list {
+                    display: flex;
+                    flex-direction: row;
+                    row-gap: 24px;
+                    gap: 72px;
+                    width: 736px;
+                  }
+                
+                  .benefits-item {
+                    width: calc((100% - 72px) / 4);
+                    width: 356px;
+                  }
+                
+                  .benefits-styles {
+                    font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11111;
+letter-spacing: 0.02em;
+color: #2e2f42;
+                  }
+                
+            .benefits-paragraph {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.02em;
+                color: #434455;
+                }
+
+                .benefits-item-icon-wrapper {
+                    display: none;
+                }
+            
+                .visually-hidden {
+                    display: none;
+                }
+    }
+
+    @media screen and (min-width: 1158px) {
+        .benefits-section {
+            padding: 120px 0;
+        }
+        
+        .visually-hidden {
+            display: block;
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+          }
+        
+          .icon-svg-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 112px;
+            background-color: #f4f4fd;
+            border-radius: 4px;
+            border: 1px solid #8e8f99;
+            margin-bottom: 8px;
+          }
+        
+          .benefits-item-icon-wrapper {
+            display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 112px;
+          margin-bottom: 8px;
+          background-color: #f4f4fd;
+          border-radius: 4px;
+          border: 1px solid #8e8f99;
+          }
+        
+          .benefits-list {
+            display: flex;
+            gap: 24px;
+          }
+        
+          .benefits-item {
+            width: calc((100% - 72px) / 4);
+          }
+        
+          .benefits-styles {
+            margin-bottom: 8px;
+          }
+        
+        .benefits-styles {
+            font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        }
+        
+        .benefits-paragraph {
+            font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        }
+    }
+    
